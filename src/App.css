@@ -1,0 +1,139 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+.subtitle {
+  color: #888;
+  margin-bottom: 16px;
+}
+
+.search {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.search input {
+  width: 360px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.search button {
+  padding: 8px 12px;
+}
+
+.suggestions {
+  list-style: none;
+  padding: 0;
+  margin: 8px auto 12px;
+  max-width: 600px;
+  text-align: left;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.suggestion {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+.suggestion:hover {
+  background: #f7f7f7;
+}
+.muted {
+  color: #888;
+  font-size: 12px;
+}
+.hint {
+  color: #666;
+  font-size: 14px;
+  margin: 8px 0;
+}
+.error {
+  color: #e34040;
+  margin: 8px 0 12px;
+}
+
+.favorites {
+  margin: 12px 0 16px;
+}
+.favorites-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.fav {
+  background: transparent;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  line-height: 30px;
+}
+.fav.active {
+  color: #f5a623;
+  border-color: #f5a623;
+}
+.favorite-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.favorite-item {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  background: #fff;
+  cursor: pointer;
+}
+.favorite-item:hover {
+  background: #f7f7f7;
+}
+
+.result .selected {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 8px 0 12px;
+}
+.current {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+}
+.hourly {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 6px;
+}
+.hour-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6px;
+  padding: 6px 8px;
+  border-bottom: 1px solid #eee;
+}
+.hour-time {
+  text-align: left;
+}
+.hour-temp {
+  text-align: center;
+}
+.hour-hum {
+  text-align: right;
+}
